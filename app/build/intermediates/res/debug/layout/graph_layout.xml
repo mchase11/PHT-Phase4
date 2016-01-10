@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/databack" >
+
+    <Button
+        android:id="@+id/graph_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graph"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Return" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:id="@+id/graph" />
+
+</RelativeLayout><!-- From: file:/Users/jaumann/AndroidStudioProjects/PHT-Phase4/app/src/main/res/layout/graph_layout.xml -->

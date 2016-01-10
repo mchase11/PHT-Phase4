@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/databack" >
+
+    <TextView
+        android:id="@+id/select_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Select Data"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_timeframe"
+        android:layout_alignRight="@+id/select_timeframe"
+        android:layout_below="@+id/select_data"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:id="@+id/select_timeframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Select Timeframe"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_timeframe"
+        android:layout_alignRight="@+id/select_timeframe"
+        android:layout_below="@+id/select_timeframe"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/data_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Submit" />
+
+</RelativeLayout><!-- From: file:/Users/jaumann/AndroidStudioProjects/PHT-Phase4/app/src/main/res/layout/data_layout.xml -->

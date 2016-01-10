@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popupback" >
+
+    <TextView
+        android:id="@+id/summaryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Summary"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<ScrollView
+    android:id="@+id/textAreaScroller"
+    android:layout_width="fill_parent"
+    android:layout_height="350dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:scrollbars="vertical" >
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:ems="10"
+        />
+</ScrollView>
+
+<Button
+    android:id="@+id/summaryButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/summaryLabel"
+    android:layout_below="@+id/textAreaScroller"
+    android:text="Close" />
+
+</RelativeLayout><!-- From: file:/Users/jaumann/AndroidStudioProjects/PHT-Phase4/app/src/main/res/layout/summary_layout.xml -->

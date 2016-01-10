@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/glucoseback"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/glSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/glucoseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/glSubmit"
+        android:layout_alignLeft="@+id/glucoseLabel"
+        android:layout_alignRight="@+id/glucoseLabel"
+        android:layout_marginBottom="32dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/glucoseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/glucoseText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="Enter Glucose"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout><!-- From: file:/Users/jaumann/AndroidStudioProjects/PHT-Phase4/app/src/main/res/layout/glucose_layout.xml -->

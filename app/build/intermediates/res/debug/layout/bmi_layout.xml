@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bmibackground"
+    android:orientation="vertical" >
+
+
+        
+         
+         <Button
+             android:id="@+id/calculateButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:onClick="calculateClickHandler"
+             android:text="Calculate" />
+
+          <EditText
+              android:id="@+id/heightText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/calculateButton"
+              android:layout_alignLeft="@+id/calculateButton"
+              android:layout_alignRight="@+id/calculateButton"
+              android:layout_marginBottom="18dp"
+              android:ems="10"
+              android:inputType="numberDecimal" />
+
+          <EditText
+              android:id="@+id/editText"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/calculateButton"
+              android:layout_alignRight="@+id/calculateButton"
+              android:layout_below="@+id/calculateButton"
+              android:layout_marginTop="53dp"
+              android:ems="10"
+              android:inputType="textMultiLine" >
+
+              <requestFocus />
+          </EditText>
+
+          <TextView
+              android:id="@+id/heightLabel"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/heightText"
+              android:layout_alignLeft="@+id/textView3"
+              android:text="Height"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+
+          <EditText
+              android:id="@+id/weightText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/heightLabel"
+              android:layout_alignLeft="@+id/calculateButton"
+              android:layout_alignRight="@+id/calculateButton"
+              android:ems="10"
+              android:inputType="numberDecimal" />
+
+          <TextView
+              android:id="@+id/textView3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/weightText"
+              android:layout_centerHorizontal="true"
+              android:text="Weight"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+
+          <TextView
+              android:id="@+id/resultLabel"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/calculateButton"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="23dp"
+              android:text="Results"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+
+<!-- From: file:/Users/jaumann/AndroidStudioProjects/PHT-Phase4/app/src/main/res/layout/bmi_layout.xml -->

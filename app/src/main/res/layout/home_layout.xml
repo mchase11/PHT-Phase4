@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phthome"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lastVitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastVitalsText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:text="Last Vital"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/lastVitalsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastVitals"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/lastGlucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastglucoseText"
+        android:layout_below="@+id/lastVitalsText"
+        android:text="Last Glucose"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/lastglucoseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/caloriesToday"
+        android:layout_below="@+id/lastGlucose"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/caloriesToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastVitalsText"
+        android:layout_below="@+id/lastglucoseText"
+        android:text="Calories Consumed Today"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/caloriesTodaytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/caloriesToday"
+        android:layout_below="@+id/caloriesToday"
+        android:ems="10" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <TextView
+        android:id="@+id/caloriesBurned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/caloriesToday"
+        android:layout_below="@+id/caloriesTodaytext"
+        android:text="Calories Burned Today"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <AutoCompleteTextView
+        android:id="@+id/caloriesBurnedtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/caloriesBurned"
+        android:layout_below="@+id/caloriesBurned"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/hmRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/caloriesBurnedtext"
+        android:layout_below="@+id/caloriesBurnedtext"
+        android:text="Refresh" />
+    
+</RelativeLayout>

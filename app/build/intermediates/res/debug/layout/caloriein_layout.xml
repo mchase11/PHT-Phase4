@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/caloriesbackground" 
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/mealspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inputcaloriesText"
+        android:layout_alignRight="@+id/inputcaloriesText"
+        android:layout_below="@+id/meallabel"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:id="@+id/calorieintakeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputcaloriesText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/meallabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="Choose a meal time"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/inputcaloriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/inputcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputcaloriesText"
+        android:layout_centerHorizontal="true"
+        android:text="Input Calories"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 
+</RelativeLayout><!-- From: file:/Users/jaumann/AndroidStudioProjects/PHT-Phase4/app/src/main/res/layout/caloriein_layout.xml -->

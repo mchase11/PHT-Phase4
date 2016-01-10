@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vitalsback" 
+    android:orientation="vertical">
+
+   	 <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+     <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+      <Space
+        android:layout_width="wrap_content"        
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp02Text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Enter" />
+
+    <EditText
+        android:id="@+id/bloodPresureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/temperature"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/bloodpressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bloodPresureText"
+        android:layout_alignLeft="@+id/bloodPresureText"
+        android:text="Blood Pressure"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/temperatureText"
+        android:layout_alignLeft="@+id/bloodPresureText"
+        android:text="Temperature"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pulse"
+        android:layout_alignLeft="@+id/temperature"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pulseText"
+        android:layout_alignLeft="@+id/temperatureText"
+        android:text="Pulse"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/pulseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Resp"
+        android:layout_alignLeft="@+id/pulse"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Resp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/respText"
+        android:layout_alignLeft="@+id/pulseText"
+        android:text="Respirations"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/respText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Resp"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/spO2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/respText"
+        android:layout_below="@+id/respText"
+        android:text="SpO2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/sp02Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spO2"
+        android:layout_below="@+id/spO2"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>
